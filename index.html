@@ -1,34 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
     <link rel="stylesheet" href="style.css">
+    <title>Document</title>
 </head>
+
 <body>
-    <h1>Hello</h1>
-    <nav class="navbar">
-        <div class="navitem">Menu</div>
-        <div class="navitem">Home</div>
-        <div class="navitem">Web</div>
-        <div class="navitem">Page</div>
-    </nav>
-    <body class = "title">
-        <img src="download.jpg" alt="ITF">
-        <div class="title-txt">
-            King Mongkut’s Institute of Technology Ladkrabang KMITL KMITL has been established since 1960 and is considered one of 
-            pioneer science and technology institutes in Thailand. The name of the institute was derived from the name of King Rama IV.
-        </div>
-        <p>g</p>
-    </body>
-    <footer class = foot>
-        <div class = End>
-            END
-        </div>
-            <a href="https://www.it.kmitl.ac.th/en/#:~:text=Admission%20Available%20Ph.D.%20in%20Information">
-                <button>click me</button>
+    <div class="main">
+        <div class="para">
+            <a target="_blank" href="https://www.instagram.com/tobynaja" class="linktoProfile">
+                <p id="username">Hello , ok</p>
             </a>
-    </footer>
+        </div>
+        <div id="profile" class="image">
+            <!-- <img id="profile" src="" alt=""> -->
+            <div class="imgs">
+                <p>1</p>
+            </div>
+        </div>
+        <div class="box">
+            <div class="puser">
+                <p>Set the Username</p>
+            </div>
+            <input id="inputUsername" placeholder="Enter username" type="text">
+            <button onclick="setUsername()">Confirm</button>
+        </div>
+        <div class="box">
+            <div class="puser">
+                <p>Change Profile</p>
+            </div>
+            <input id="inputImage" placeholder="Enter Image Url" type="text">
+            <button onclick="setImage()">Confirm</button>
+        </div>
+        <div class="phone">
+            <p>Phone Number List</p>
+            <div class="box">
+                <input id="inputName" placeholder="Username" type="text">
+                <input id="inputPhone" placeholder="Tel" type="text">
+                <button onclick="addName()">Add</button>
+                <button onclick="saveCSV()">Export</button>
+            </div>
+            <table id="create">
+                <tr>
+                    <th>No.</th>
+                    <th>Name</th>
+                    <th>Tel.</th>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <script src="script.js"></script>
+
 </body>
-</html>
+
+</html>    
