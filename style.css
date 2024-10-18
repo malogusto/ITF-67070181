@@ -1,37 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
 *{
     margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    text-decoration: none;
 }
-.navbar{
-    font-size: 50px;
+
+.main{
     display: flex;
-    flex-direction: row;
-    background-color: rebeccapurple;
-    column-gap: 10px;
-    padding: 20px;
-    justify-content: space-around;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 5em 0;
+    .para{
+        margin: 0 0 2em 0;
+        font-weight: bold;
+        /* color: black; */
+    }
+    .image{
+        width: 183px;
+        background-image: url("https://cdn-icons-png.flaticon.com/512/456/456432.png");
+        height: 183px;
+        background-position: center;
+        background-size: 100%;
+        background-repeat: no-repeat;
+        background-color: rgb(119, 191, 219);
+        border-radius: 100%;
+        position: relative;
+        .imgs{
+            position: absolute;
+            background-color: red;
+            width: 30px;
+            height: 30px;
+            border-radius: 100%;
+            text-align: center;
+            top: 85%;
+            left: 70%;
+            p {
+                margin: .1em 0 0 0;
+            }
+        }
+    }
+    .box{
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        justify-content: center;
+        margin: 2em 0 0 0;
+        input{
+            padding: .3em .6em;
+            border-radius: .5em;
+            border: none;
+            background-color: rgb(243, 243, 243);
+            margin: 0 2em;
+        }
+        button{
+            padding: .2em .5em;
+            border: 1px solid rgb(48, 48, 48);
+            border-radius: .5em;
+            margin: 0 1em;
+        }
+        
+    }   
 }
-.navitem{
-    background-color: aqua  ;
+.linktoProfile{
+     color: black;
 }
-.title{
-    font-size: 27px;
-    display: grid;
-    height: 500px;
+.linktoProfile:hover{
+    color: rgb(109, 176, 238);
+    text-decoration: underline;
 }
-.title-txt{
+.phone{
     display: flex;
-    justify-content: space-around;
-    display: table-column;
-    height: 450px;
-}
-img{
-    width: 450px;
-    height: 300px;
-}
-.END{
-    font-size: 70px;
-    display: flex;
-}
-.a{
-    height: 30px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 2em 0;
+    & p{
+        font-size: 2vh;
+    }
+    table{
+        margin: 2em 0 0 0;
+        width: 100%;
+        border-collapse: collapse;
+        td, th{
+            text-align: center
+        }
+    }
 }
